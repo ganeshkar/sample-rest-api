@@ -3,7 +3,7 @@ var express = require('express'),
   port = process.env.PORT || 3000;
 
 app.get('/api/products', function(req, res) {
-  res.status(200).send({name: "TEST PRODUCT"})
+  res.status(200).send({name: "TEST PRODUCTS"})
 });
 
 app.listen(port);
