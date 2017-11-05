@@ -4,7 +4,7 @@ var express = require('express'),
 
 app.get('/api/products', function(req, res) {
   return res.json({
-        name: "TEST PROD",
+        name: "New Product",
         id: "prodID",
         details: 'This a test product'
     });
