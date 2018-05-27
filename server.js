@@ -14,7 +14,7 @@ app.get('/api/products', function(req, res) {
 });
 
 app.post('/api/products', function(req, res) {
-  console.log(JSON.stringify(req.body));
+  console.log(req.body);
   return res.json({
         "status":"Request submitted sucessfully"
     });
