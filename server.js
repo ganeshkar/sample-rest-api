@@ -1,6 +1,9 @@
+var bodyParser = require('body-parser');
 var express = require('express'),
   app = express(),
   port = process.env.PORT || 3000;
+
+app.use(bodyParser.json());
 
 app.get('/api/products', function(req, res) {
   return res.json({
