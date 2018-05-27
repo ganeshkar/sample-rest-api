@@ -10,6 +10,13 @@ app.get('/api/products', function(req, res) {
     });
 });
 
+app.post('/api/products', function(req, res) {
+  console.log(JSON.stringify(req.body));
+  return res.json({
+        "status":"Request submitted sucessfully"
+    });
+});
+
 app.listen(port);
 
 console.log('RESTful API server started on: ' + port);
